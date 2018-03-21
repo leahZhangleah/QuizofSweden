@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sweden"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over">
+
+    <TextView
+        android:id = "@+id/name_greeting"
+        android:layout_margin="@dimen/horizontal_space"
+        android:textSize="@dimen/name_greeting_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_space"
+            android:layout_marginRight="@dimen/horizontal_space"
+            android:layout_marginTop="@dimen/vertical_space"
+            android:text="@string/second_question"
+            android:textSize="@dimen/question_text_size" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/horizontal_space">
+            <CheckBox
+                android:id="@+id/check_box_skype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_qustion_choice_1" />
+
+            <CheckBox
+                android:id="@+id/check_box_bosch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_qustion_choice_2" />
+
+            <CheckBox
+                android:id="@+id/check_box_ericsson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_qustion_choice_3" />
+
+            <CheckBox
+                android:id="@+id/check_box_hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_qustion_choice_4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/vertical_space"
+        android:text="@string/next_question_button"
+        android:id="@+id/nextQuestionBtn2"
+        android:textColor="@color/buttonText"
+        android:background="@drawable/button_press_effect"/>
+
+
+</RelativeLayout>

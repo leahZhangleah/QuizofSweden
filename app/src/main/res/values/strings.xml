@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Quiz of Sweden</string>
+    <string name="front_page_title">How much do you know about Sweden?</string>
+    <string name="front_page_button_name">Let\'s find out</string>
+    <string name="front_page_hint_text">Name</string>
+    <string name="next_question_button">next</string>
+    <string name="first_question">What is the name of the Swedish King?</string>
+    <string name="first_question_choice_1">Carl Gustaf</string>
+    <string name="first_question_choice_2">Haakon</string>
+    <string name="first_question_choice_3">Wilhelm II</string>
+    <string name="second_question">What are Swedish brands?</string>
+    <string name="second_qustion_choice_1">SKYPE</string>
+    <string name="second_qustion_choice_2">BOSCH</string>
+    <string name="second_qustion_choice_3">ERICSSON</string>
+    <string name="second_qustion_choice_4">HM</string>
+    <string name="third_question">How many European countries have a larger area than Sweden?</string>
+    <string name="third_question_hint">Write a number</string>
+    <string name="fourth_question">	What is the average temperature in Stockholm in July?</string>
+    <string name="fourth_question_choice_1">12</string>
+    <string name="fourth_question_choice_2">18</string>
+    <string name="fourth_question_choice_3">23</string>
+    <string name="submit_answer_button">submit</string>
+    <string name="name_required">Please type in a user name</string>
+    <string name="question_answer_required">Please select or write an answer</string>
+    <string name="third_question_digit_only">Please only write a digit number</string>
+</resources>
