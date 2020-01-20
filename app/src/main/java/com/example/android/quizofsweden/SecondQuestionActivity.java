@@ -27,6 +27,7 @@ public class SecondQuestionActivity extends AppCompatActivity implements Compoun
     private boolean choice2;
     private boolean choice3;
     private boolean choice4;
+    private boolean ifAnswerIsSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,13 +67,15 @@ public class SecondQuestionActivity extends AppCompatActivity implements Compoun
         nextQuestion();
     }
 
+
     //check if user has answered the question and go to next activity
     public void nextQuestion(){
         nextQuestion = (Button) findViewById(R.id.nextQuestionBtn2);
         nextQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (choice1 == false && choice2 == false && choice3 == false && choice4 == false){
+                ifAnswerIsSelected = choice1 == false && choice2 == false && choice3 == false && choice4 == false;
+                if (ifAnswerIsSelected){
                     Toast.makeText(SecondQuestionActivity.this,R.string.question_answer_required,Toast.LENGTH_SHORT).show();
                 }else {
                     checkAnswer();
@@ -82,7 +85,6 @@ public class SecondQuestionActivity extends AppCompatActivity implements Compoun
                     startActivity(intent);
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
-
             }
         });
     }
